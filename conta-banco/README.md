@@ -11,3 +11,5 @@
   <li>Nome completo</li>
   <li>Saldo em conta</li>
 </ol>
+
+<P>Após isso, imprimir uma mensagem de boas-vindas mencionando os dados digitados do usuário</P>
