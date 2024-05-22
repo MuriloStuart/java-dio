@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Contador {
@@ -11,17 +12,26 @@ public class Contador {
 
         try {
             contar (num1,num2);
-        } catch (Exception e) {
-            // TODO: handle exception
+        } catch (InputMismatchException e) {
+            System.out.println("Os parâmetros devem ser em números");
         }
 
     }
 
 
-    static void contar(int num1, int num2) throws ParametrosInvalidosException {
+    static void contar(int num1, int num2){
     //validar se parametroUm é MAIOR que parametroDois e lançar a exceção
+    if(num1 > num2){
+        ParametrosInvalidosException();
+    }
     
     int contagem = num2 - num1;
-    //realizar o for para imprimir os números com base na variável contagem
-  }  
+    for(int indice = 0; indice < contagem; indice++){
+        System.out.println("Impimindo o número " + (indice+1));
+    }
+  }
+  
+  static void ParametrosInvalidosException(){
+    System.out.println("O segundo número deve ser maior que o primeiro");
+  }
 }
