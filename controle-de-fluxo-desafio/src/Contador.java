@@ -21,7 +21,7 @@ public class Contador {
     static void contar(int num1, int num2) throws ParametrosInvalidosException {
     //validar se parametroUm é MAIOR que parametroDois e lançar a exceção
     
-    int contagem = parametroDois - parametroUm;
+    int contagem = num2 - num1;
     //realizar o for para imprimir os números com base na variável contagem
   }  
 }
